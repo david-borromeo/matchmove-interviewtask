@@ -6,15 +6,113 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <link rel="stylesheet" href="css/normalize.min.css">
+         <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,600' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="css/main.css">
 
-        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+
     </head>
     <body>
 
-        <p>Hello world! This is HTML5 Boilerplate.</p>
+        <div id="main-content">
+
+            <div class="profile-wrapper">
+
+                <a href="#profilePicture" class="profile-image">
+                    <img src="img/avatar.jpg" width="250" height="250" alt="User name's Profile Image">
+                </a>
+
+                <div class="profile-content">
+                    <h2 class="profile-title">User Name</h2>
+
+                    <ul class="profile-metas">
+                        <li>
+                            <a href="#posts" class="meta-posts">1000<span>posts</span></a>
+                        </li>
+
+                        <li>
+                            <a href="#likes" class="meta-likes">1000<span>likes</span></a>
+                        </li>
+
+                        <li>
+                            <a href="#comments" class="meta-comments">1000<span>comments</span></a>
+                        </li>
+                    </ul>
+
+                </div> <!-- /.profile-content -->
+
+                <div class="clearfix"></div>
+            </div><!-- /.profile-wrapper -->
+
+            <div id="slide" class="slider-wrapper">
+
+                <ul class="slider-posts" id="main-slider">
+                    <li class="slide-post">
+                        <div class="post-content">
+                            <p>Large Subhead Text, Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+                            <span class="post-hour">1 hr ago</span>
+                        </div>
+                    </li>
+
+                    <li class="slide-post">
+                        <div class="post-content">
+                            <p>Reprehenderit impedit recusandae omnis quo cupiditate quas, ratione nostrum minima. Vitae temporibus dolor eligendi blanditiis aspernatur pariatur porro nulla totam.</p>
+                            <span class="post-hour">2 hrs ago</span>
+                        </div>
+                    </li>
+
+                    <li class="slide-post">
+                        <div class="post-content">
+                            <p>Minima nihil hic sed officia iste ipsa possimus quod impedit!</p>
+                            <span class="post-hour">4 hrs ago</span>
+                        </div>
+                    </li>
+                </ul>
+
+                <div class="control-wrapper">
+                   <a href="#prev" class="control" id="control-prev"><span class="icon-left-open"></span></a>
+                   <a href="#next" class="control"  id="control-next"><span class="icon-right-open"></span></a>
+                </div>
+
+            </div><!-- /.slider-wrapper -->
+
+            <div class="actions-wrapper">
+
+                <a href="#new-post-form" class="newpost-btn modal-trigger"><span class="icon-plus"></span></a>
+
+                <div class="actions-group">
+                    <a href="#reply-form" class="reply-btn modal-trigger"><span class="icon-reply"></span></a>
+                    <a href="#like" class="like-btn modal-trigger"><span class="icon-heart"></span></a>
+                </div>
+
+                <div class="clearfix"></div>
+            </div><!-- /.actions-wrapper -->
+
+        </div> <!-- /#main-content -->
+
+
+        <div id="new-post-form" class="modal">
+            <span class="close-trigger close-wrapper"></span>
+            <div class="modal-content">
+                <span class="close-btn close-trigger"></span>
+                <form action="index.html">
+                    <label for="newPost">Update Status</label>
+                    <textarea name="newPost" id="newPost" cols="30" rows="10" placeholder="What's on your mind?"></textarea>
+                    <input type="submit" value="Post">
+                </form>
+            </div>
+        </div>
+
+        <div id="reply-form" class="modal">
+            <span class="close-trigger close-wrapper"></span>
+            <div class="modal-content">
+                <span class="close-btn close-trigger"></span>
+                <form action="index.html">
+                    <label for="newPost">Reply to Post</label>
+                    <textarea name="newPost" id="newPost" cols="30" rows="10" placeholder="Write a comment..."></textarea>
+                    <input type="submit" value="Reply">
+                </form>
+            </div>
+        </div>
 
         <script src="js/main.js"></script>
     </body>

@@ -1,0 +1,34 @@
+ [class^="icon-"],
+ [class*=" icon-"]{
+    color:$dark-main;
+    @include transition(all 0.3s ease);
+
+    &:before{
+      font-family: "custom";
+      font-style: normal;
+      font-weight: normal;
+      speak: none;
+
+      display: inline-block;
+      font-variant: normal;
+      text-transform: none;
+      line-height: 1;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    &:hover{
+      color:$light-main;
+    }
+ }
+
+ [class^="icon-"]:before, [class*=" icon-"]:before {
+
+
+}
+
+.icon-reply:before { content: '\e800'; }
+.icon-heart:before { content: '\e801'; }
+.icon-plus:before { content: '\e802'; }
+.icon-right-open:before { content: '\e803'; }
+.icon-left-open:before { content: '\e804'; }
